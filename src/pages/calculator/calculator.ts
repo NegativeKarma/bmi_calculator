@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the CalculatorPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-calculator',
@@ -29,7 +22,7 @@ export class CalculatorPage {
 
   calculateBMI() {
     if (this.weight > 0 && this.height > 0 ) {
-      let finalBmi = this.weight / (this.height / 100* this.height / 100);
+      let finalBmi = this.weight / (this.height / 100 * this.height / 100);
       this.bmiValue = parseFloat(finalBmi.toFixed(2));
       this.setBMIMessage();
     }
