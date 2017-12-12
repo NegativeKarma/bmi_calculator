@@ -15,6 +15,7 @@ export class CalculatorPage {
   systemType: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.systemType = "metric";
   }
 
   ionViewDidLoad() {
